@@ -1,0 +1,16 @@
+Fitter Status : Successful - Tue Nov 06 14:23:16 2018
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Revision Name : PFE
+Top-level Entity Name : PFE
+Family : Cyclone III
+Device : EP3C16F484C6
+Timing Models : Final
+Total logic elements : 373 / 15,408 ( 2 % )
+    Total combinational functions : 370 / 15,408 ( 2 % )
+    Dedicated logic registers : 40 / 15,408 ( < 1 % )
+Total registers : 40
+Total pins : 38 / 347 ( 11 % )
+Total virtual pins : 0
+Total memory bits : 0 / 516,096 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 112 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

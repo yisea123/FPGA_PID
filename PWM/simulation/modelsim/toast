@@ -1,0 +1,8 @@
+view wave 
+wave clipboard store
+wave create -driver freeze -pattern clock -initialvalue 0 -period 20ns -dutycycle 50 -starttime 0us -endtime 1000us sim:/pwm/clk 
+wave create -driver freeze -pattern constant -value 1 -starttime 0us -endtime 1000us sim:/pwm/reset_n 
+wave create -driver freeze -pattern counter -startvalue 001 -endvalue 111 -type Range -direction Up -period 120us -step 1 -repeat forever -range 2 0 -starttime 0us -endtime 1000us sim:/pwm/duty 
+WaveExpandAll -1
+WaveCollapseAll -1
+wave clipboard restore

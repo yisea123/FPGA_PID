@@ -1,0 +1,33 @@
+|PWM
+clk => s.CLK
+clk => half_duty[0].CLK
+clk => half_duty[1].CLK
+clk => half_duty[2].CLK
+clk => half_duty[3].CLK
+clk => half_duty[4].CLK
+clk => half_duty[5].CLK
+clk => half_duty[6].CLK
+clk => half_duty[7].CLK
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => count[4].CLK
+clk => count[5].CLK
+clk => count[6].CLK
+clk => count[7].CLK
+clk => count[8].CLK
+clk => half_duty_new[0].CLK
+clk => half_duty_new[1].CLK
+clk => half_duty_new[2].CLK
+clk => half_duty_new[3].CLK
+clk => half_duty_new[4].CLK
+clk => half_duty_new[5].CLK
+clk => half_duty_new[6].CLK
+clk => half_duty_new[7].CLK
+duty[0] => Mult0.IN11
+duty[1] => Mult0.IN10
+duty[2] => Mult0.IN9
+pwm_out <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+

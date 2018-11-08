@@ -1,0 +1,64 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+entity encoder is
+port(
+	CHAN_A : IN STD_LOGIC;
+	CHAN_B : IN STD_LOGIC;
+	RAZ	 : IN STD_LOGIC;
+	LED_A	 : OUT STD_LOGIC;
+	LED_B	 : OUT STD_LOGIC;
+	DIGIT_0: OUT STD_LOGIC_VECTOR(6 downto 0);
+	DIGIT_1: OUT STD_LOGIC_VECTOR(6 downto 0);
+	DIGIT_2: OUT STD_LOGIC_VECTOR(6 downto 0);
+	DIGIT_3: OUT STD_LOGIC_VECTOR(6 downto 0)
+);
+end;
+
+architecture behavior of encoder is
+SIGNAL compte : STD_LOGIC_VECTOR(3 downto 0):="0000";
+
+CONSTANT Aff_0 : STD_LOGIC_VECTOR(6 downto 0) :="0000001";
+CONSTANT Aff_1 : STD_LOGIC_VECTOR(6 downto 0) :="1001111";
+CONSTANT Aff_2 : STD_LOGIC_VECTOR(6 downto 0) :="0010010";
+CONSTANT Aff_3 : STD_LOGIC_VECTOR(6 downto 0) :="0000110";
+CONSTANT Aff_4 : STD_LOGIC_VECTOR(6 downto 0) :="1001100";
+CONSTANT Aff_5 : STD_LOGIC_VECTOR(6 downto 0) :="0100100";
+CONSTANT Aff_6 : STD_LOGIC_VECTOR(6 downto 0) :="0100000";
+CONSTANT Aff_7 : STD_LOGIC_VECTOR(6 downto 0) :="0001111";
+CONSTANT Aff_8 : STD_LOGIC_VECTOR(6 downto 0) :="0000000";
+CONSTANT Aff_9 : STD_LOGIC_VECTOR(6 downto 0) :="0000100";
+CONSTANT Aff_A : STD_LOGIC_VECTOR(6 downto 0) :="0001000";
+CONSTANT Aff_B : STD_LOGIC_VECTOR(6 downto 0) :="1100000";
+CONSTANT Aff_C : STD_LOGIC_VECTOR(6 downto 0) :="0110001";
+CONSTANT Aff_D : STD_LOGIC_VECTOR(6 downto 0) :="1000010";
+CONSTANT Aff_E : STD_LOGIC_VECTOR(6 downto 0) :="0110000";
+CONSTANT Aff_F : STD_LOGIC_VECTOR(6 downto 0) :="0111000";
+CONSTANT moins : STD_LOGIC_VECTOR(6 downto 0) :="1111110";
+BEGIN
+
+--LEDs AFFICHANT L'ETAT DES PIN CHAN_A et CHAN_B
+LED_A <= CHAN_A;
+LED_B <= CHAN_B;
+
+--PROCESS gerant le compte des ticks
+CompteurTicks : PROCESS(CHAN_A, CHAN_B, RAZ)
+BEGIN
+	if RAZ = '0' then
+		compte<="0000";
+	else
+		if(CHAN_A'event AND CHAN_A='1') then
+		
+		elsif(CHAN_A'event AND CHAN_A='0') then
+		
+		elsif(CHAN_B'event AND CHAN_B='1') then
+		
+		elsif(CHAN_B'event AND CHAN_B='0') then
+		
+		end if;
+		compte<=compte+1;
+	end if;
+END PROCESS;
+end behavior;

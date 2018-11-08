@@ -1,0 +1,16 @@
+Fitter Status : Successful - Wed Nov 07 00:13:22 2018
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Revision Name : PWM
+Top-level Entity Name : pwm
+Family : Cyclone III
+Device : EP3C16F484C6
+Timing Models : Final
+Total logic elements : 48 / 15,408 ( < 1 % )
+    Total combinational functions : 47 / 15,408 ( < 1 % )
+    Dedicated logic registers : 26 / 15,408 ( < 1 % )
+Total registers : 26
+Total pins : 5 / 347 ( 1 % )
+Total virtual pins : 0
+Total memory bits : 0 / 516,096 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 112 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
