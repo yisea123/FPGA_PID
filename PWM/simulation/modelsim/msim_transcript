@@ -10,7 +10,7 @@
 # ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vcom -93 -work work {C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd}
+# vcom -93 -work work {C:/Users/Tic-Tac/Desktop/TSP/PFE/PFE_FPGA/PWM/PWM.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -18,7 +18,7 @@
 # -- Loading package std_logic_arith
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity pwm
-# -- Compiling architecture logic of pwm
+# -- Compiling architecture simple_pwm of pwm
 # 
 vsim work.pwm
 # vsim work.pwm 
@@ -27,243 +27,27 @@ vsim work.pwm
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.std_logic_arith(body)
 # Loading ieee.std_logic_unsigned(body)
-# Loading work.pwm(logic)
-wave create -driver freeze -pattern clock -initialvalue U -period 20ns -dutycycle 50 -starttime 0us -endtime 1000us sim:/pwm/clk
-wave create -driver freeze -pattern counter -startvalue 001 -endvalue 111 -type Range -direction Up -period 120us -step 1 -repeat forever -range 2 0 -starttime 0us -endtime 1000us sim:/pwm/duty
+# Loading work.pwm(simple_pwm)
+do C:/Users/Tic-Tac/Desktop/TSP/PFE/PFE_FPGA/PWM/simulation/modelsim/wave.do
+# .main_pane.wave.interior.cs.body.pw.wf
+# 1
+# 1
 add wave -position insertpoint  \
-sim:/pwm/count
+sim:/pwm/pwm_out
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 # 
 #           File in use by: Tic-Tac  Hostname: TICOMEN  ProcessID: 2412
 # 
-#           Attempting to use alternate WLF file "./wlfte59aq7".
+#           Attempting to use alternate WLF file "./wlftd0wvbe".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlfte59aq7
+#           Using alternate file: ./wlftd0wvbe
 # 
 add wave -position insertpoint  \
-sim:/pwm/pwm_out
+sim:/pwm/count
+wave modify -driver freeze -pattern counter -startvalue 000 -endvalue 100 -type Range -direction Up -period 400us -step 1 -repeat forever -range 2 0 -starttime 0us -endtime 1000us Edit:/pwm/duty
+wave modify -driver freeze -pattern counter -startvalue 000 -endvalue 100 -type Range -direction Up -period 250us -step 1 -repeat forever -range 2 0 -starttime 0us -endtime 1000us Edit:/pwm/duty
 run -all
 restart -f
-run -all
-step -over
-# 
-# Internal Error: In tclprim_ApplyStimulus for /pwm/clk "Time value must be greater than "now": 1000000000 ps
-# ** Error: (vsim-4004) The -cancel option requires a time period argument.
-# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]"
-# Internal Error: In tclprim_ApplyStimulus for /pwm/duty ""
-restart -f
-step
-run -all
-restart -f
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 35
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 35
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 35
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 35
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 35
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 35
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 35
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 35
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 35
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 35
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 35
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 35
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 35
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 35
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 35
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 35
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 35
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 35
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 35
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 35
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 35
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 35
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 35
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 35
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 35
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 35
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-restart -f
-# Break key hit 
-vcom -reportprogress 300 -work work C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity pwm
-# -- Compiling architecture logic of pwm
-vcom -reportprogress 300 -work work C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity pwm
-# -- Compiling architecture logic of pwm
-restart -f
-# Loading work.pwm(logic)
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
-run -all
-# Break in Process line__24 at C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/PWM.vhd line 30
+wave modify -driver freeze -pattern counter -startvalue 100 -endvalue 111 -type Range -direction Up -period 200us -step 1 -repeat forever -range 2 0 -starttime 0us -endtime 1000us Edit:/pwm/duty
 run -all

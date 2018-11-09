@@ -1,5 +1,5 @@
 Assembler report for PWM
-Wed Nov 07 00:13:25 2018
+Fri Nov 09 12:38:28 2018
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -10,7 +10,7 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/output_files/PWM.sof
+  5. Assembler Device Options: C:/Users/Tic-Tac/Desktop/TSP/PFE/PFE_FPGA/PWM/output_files/PWM.sof
   6. Assembler Messages
 
 
@@ -37,7 +37,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Wed Nov 07 00:13:25 2018 ;
+; Assembler Status      ; Successful - Fri Nov 09 12:38:28 2018 ;
 ; Revision Name         ; PWM                                   ;
 ; Top-level Entity Name ; pwm                                   ;
 ; Family                ; Cyclone III                           ;
@@ -77,24 +77,24 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+-----------------------------------------------------------+
-; Assembler Generated Files                                 ;
-+-----------------------------------------------------------+
-; File Name                                                 ;
-+-----------------------------------------------------------+
-; C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/output_files/PWM.sof ;
-+-----------------------------------------------------------+
++--------------------------------------------------------------------+
+; Assembler Generated Files                                          ;
++--------------------------------------------------------------------+
+; File Name                                                          ;
++--------------------------------------------------------------------+
+; C:/Users/Tic-Tac/Desktop/TSP/PFE/PFE_FPGA/PWM/output_files/PWM.sof ;
++--------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/output_files/PWM.sof ;
-+----------------+--------------------------------------------------------------------+
-; Option         ; Setting                                                            ;
-+----------------+--------------------------------------------------------------------+
-; Device         ; EP3C16F484C6                                                       ;
-; JTAG usercode  ; 0x000CDB76                                                         ;
-; Checksum       ; 0x000CDB76                                                         ;
-+----------------+--------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/Tic-Tac/Desktop/TSP/PFE/PFE_FPGA/PWM/output_files/PWM.sof ;
++----------------+-----------------------------------------------------------------------------+
+; Option         ; Setting                                                                     ;
++----------------+-----------------------------------------------------------------------------+
+; Device         ; EP3C16F484C6                                                                ;
+; JTAG usercode  ; 0x000DB6E2                                                                  ;
+; Checksum       ; 0x000DB6E2                                                                  ;
++----------------+-----------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -103,14 +103,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Wed Nov 07 00:13:23 2018
+    Info: Processing started: Fri Nov 09 12:38:27 2018
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off PWM -c PWM
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4607 megabytes
-    Info: Processing ended: Wed Nov 07 00:13:25 2018
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 4601 megabytes
+    Info: Processing ended: Fri Nov 09 12:38:28 2018
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

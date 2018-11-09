@@ -1,5 +1,5 @@
 EDA Netlist Writer report for PWM
-Wed Nov 07 00:13:31 2018
+Fri Nov 09 12:38:34 2018
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Wed Nov 07 00:13:31 2018 ;
+; EDA Netlist Writer Status ; Successful - Fri Nov 09 12:38:34 2018 ;
 ; Revision Name             ; PWM                                   ;
 ; Top-level Entity Name     ; pwm                                   ;
 ; Family                    ; Cyclone III                           ;
@@ -66,20 +66,20 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+------------------------+
 
 
-+-----------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                              ;
-+-----------------------------------------------------------------------------------------+
-; Generated Files                                                                         ;
-+-----------------------------------------------------------------------------------------+
-; C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/simulation/modelsim/PWM_6_1200mv_85c_slow.vho      ;
-; C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/simulation/modelsim/PWM_6_1200mv_0c_slow.vho       ;
-; C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/simulation/modelsim/PWM_min_1200mv_0c_fast.vho     ;
-; C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/simulation/modelsim/PWM.vho                        ;
-; C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/simulation/modelsim/PWM_6_1200mv_85c_vhd_slow.sdo  ;
-; C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/simulation/modelsim/PWM_6_1200mv_0c_vhd_slow.sdo   ;
-; C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/simulation/modelsim/PWM_min_1200mv_0c_vhd_fast.sdo ;
-; C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/simulation/modelsim/PWM_vhd.sdo                    ;
-+-----------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                       ;
++--------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                  ;
++--------------------------------------------------------------------------------------------------+
+; C:/Users/Tic-Tac/Desktop/TSP/PFE/PFE_FPGA/PWM/simulation/modelsim/PWM_6_1200mv_85c_slow.vho      ;
+; C:/Users/Tic-Tac/Desktop/TSP/PFE/PFE_FPGA/PWM/simulation/modelsim/PWM_6_1200mv_0c_slow.vho       ;
+; C:/Users/Tic-Tac/Desktop/TSP/PFE/PFE_FPGA/PWM/simulation/modelsim/PWM_min_1200mv_0c_fast.vho     ;
+; C:/Users/Tic-Tac/Desktop/TSP/PFE/PFE_FPGA/PWM/simulation/modelsim/PWM.vho                        ;
+; C:/Users/Tic-Tac/Desktop/TSP/PFE/PFE_FPGA/PWM/simulation/modelsim/PWM_6_1200mv_85c_vhd_slow.sdo  ;
+; C:/Users/Tic-Tac/Desktop/TSP/PFE/PFE_FPGA/PWM/simulation/modelsim/PWM_6_1200mv_0c_vhd_slow.sdo   ;
+; C:/Users/Tic-Tac/Desktop/TSP/PFE/PFE_FPGA/PWM/simulation/modelsim/PWM_min_1200mv_0c_vhd_fast.sdo ;
+; C:/Users/Tic-Tac/Desktop/TSP/PFE/PFE_FPGA/PWM/simulation/modelsim/PWM_vhd.sdo                    ;
++--------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -88,20 +88,20 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Wed Nov 07 00:13:30 2018
+    Info: Processing started: Fri Nov 09 12:38:33 2018
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off PWM -c PWM
-Info (204019): Generated file PWM_6_1200mv_85c_slow.vho in folder "C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file PWM_6_1200mv_0c_slow.vho in folder "C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file PWM_min_1200mv_0c_fast.vho in folder "C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file PWM.vho in folder "C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file PWM_6_1200mv_85c_vhd_slow.sdo in folder "C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file PWM_6_1200mv_0c_vhd_slow.sdo in folder "C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file PWM_min_1200mv_0c_vhd_fast.sdo in folder "C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file PWM_vhd.sdo in folder "C:/Users/Tic-Tac/Desktop/TSP/PFE/PWM/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file PWM_6_1200mv_85c_slow.vho in folder "C:/Users/Tic-Tac/Desktop/TSP/PFE/PFE_FPGA/PWM/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file PWM_6_1200mv_0c_slow.vho in folder "C:/Users/Tic-Tac/Desktop/TSP/PFE/PFE_FPGA/PWM/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file PWM_min_1200mv_0c_fast.vho in folder "C:/Users/Tic-Tac/Desktop/TSP/PFE/PFE_FPGA/PWM/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file PWM.vho in folder "C:/Users/Tic-Tac/Desktop/TSP/PFE/PFE_FPGA/PWM/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file PWM_6_1200mv_85c_vhd_slow.sdo in folder "C:/Users/Tic-Tac/Desktop/TSP/PFE/PFE_FPGA/PWM/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file PWM_6_1200mv_0c_vhd_slow.sdo in folder "C:/Users/Tic-Tac/Desktop/TSP/PFE/PFE_FPGA/PWM/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file PWM_min_1200mv_0c_vhd_fast.sdo in folder "C:/Users/Tic-Tac/Desktop/TSP/PFE/PFE_FPGA/PWM/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file PWM_vhd.sdo in folder "C:/Users/Tic-Tac/Desktop/TSP/PFE/PFE_FPGA/PWM/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4562 megabytes
-    Info: Processing ended: Wed Nov 07 00:13:31 2018
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 4567 megabytes
+    Info: Processing ended: Fri Nov 09 12:38:35 2018
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 
