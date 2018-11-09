@@ -22,9 +22,14 @@ clk => duty_prop[7].CLK
 clk => duty_prop[8].CLK
 clk => duty_prop[9].CLK
 clk => duty_prop[10].CLK
-duty[0] => Mult0.IN13
-duty[1] => Mult0.IN12
-duty[2] => Mult0.IN11
-pwm_out << s.DB_MAX_OUTPUT_PORT_TYPE
+duty[0] => Mult0.IN18
+duty[1] => Mult0.IN17
+duty[2] => Mult0.IN16
+duty[3] => Mult0.IN15
+duty[4] => Mult0.IN14
+duty[5] => Mult0.IN13
+duty[6] => Mult0.IN12
+duty[7] => Mult0.IN11
+pwm_out <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 

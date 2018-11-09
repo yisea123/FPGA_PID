@@ -1,12 +1,12 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
-USE ieee.std_logic_unsigned.all;
+USE ieee.numeric_std.all;
 
 ENTITY pwm IS
   GENERIC(
       sys_clk         : INTEGER := 50_000_000;	--system clock frequency in Hz
       pwm_freq        : INTEGER := 25_000;    	--PWM switching in Hz
-      bits_resolution : INTEGER := 3);          --resolution of PWM in bits
+      bits_resolution : INTEGER := 8);          --resolution of PWM in bits
   PORT(
       clk       : IN  STD_LOGIC;                                    --system clock (50MHz on Cyclone III DE3)
       duty      : IN  STD_LOGIC_VECTOR(bits_resolution-1 DOWNTO 0); --duty cycle of PWM (0 to 2^resolution -1)
@@ -15,6 +15,7 @@ END pwm;
 
 ARCHITECTURE simple_pwm OF pwm IS
   CONSTANT  period			:	INTEGER                    := sys_clk/pwm_freq;	--Clock pulses per PWM periods
+
   SIGNAL  	count				:	INTEGER RANGE 0 to period-1:= 0;						--Count of Clock pulses during a period of PWM
   SIGNAL 	s					:	STD_LOGIC						:='0';					--Output buffer, for debugging	
 BEGIN
@@ -23,7 +24,7 @@ BEGIN
 		VARIABLE	duty_prop_new	:	INTEGER RANGE 0 to period-1:= 0;						--Buffer, to only update duty cycle after a period
 	BEGIN
 		IF rising_edge(clk) THEN
-			duty_prop_new := (conv_integer(duty))*(period-1)/(2**bits_resolution-1);	--duty cycle proportionnal to period
+			duty_prop_new := (to_integer(unsigned(duty)))*(period-1)/(2**bits_resolution-1);	--duty cycle proportionnal to period
 			IF(count = period - 1) THEN																--end of period reached
 				count <= 0;																					--reset counter
 			ELSE

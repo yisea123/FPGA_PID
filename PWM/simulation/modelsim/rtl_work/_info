@@ -4,41 +4,39 @@ K3
 cModel Technology
 Z0 dC:\Users\Tic-Tac\Desktop\TSP\PFE\PFE_FPGA\PWM\simulation\modelsim
 Epwm
-Z1 w1541763389
-Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
-Z3 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
-Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
-Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
-Z6 dC:\Users\Tic-Tac\Desktop\TSP\PFE\PFE_FPGA\PWM\simulation\modelsim
-Z7 8C:/Users/Tic-Tac/Desktop/TSP/PFE/PFE_FPGA/PWM/PWM.vhd
-Z8 FC:/Users/Tic-Tac/Desktop/TSP/PFE/PFE_FPGA/PWM/PWM.vhd
+Z1 w1541771865
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\Tic-Tac\Desktop\TSP\PFE\PFE_FPGA\PWM\simulation\modelsim
+Z6 8C:/Users/Tic-Tac/Desktop/TSP/PFE/PFE_FPGA/PWM/PWM.vhd
+Z7 FC:/Users/Tic-Tac/Desktop/TSP/PFE/PFE_FPGA/PWM/PWM.vhd
 l0
 L5
-VCL8W>5USeBhVTW`UW[ao:1
-!s100 Y>S9[=`cWb79mZTeaESeg1
-Z9 OV;C;10.1d;51
+VT_nS>KoU6RL9glbFLM3g=1
+!s100 z[;YIR5ez4g2mU1k56_jd0
+Z8 OV;C;10.1d;51
 31
 !i10b 1
-Z10 !s108 1541763534.946000
-Z11 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tic-Tac/Desktop/TSP/PFE/PFE_FPGA/PWM/PWM.vhd|
-Z12 !s107 C:/Users/Tic-Tac/Desktop/TSP/PFE/PFE_FPGA/PWM/PWM.vhd|
-Z13 o-93 -work work -O0
-Z14 tExplicit 1
+Z9 !s108 1541771939.999000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tic-Tac/Desktop/TSP/PFE/PFE_FPGA/PWM/PWM.vhd|
+Z11 !s107 C:/Users/Tic-Tac/Desktop/TSP/PFE/PFE_FPGA/PWM/PWM.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
 Asimple_pwm
 R2
 R3
 R4
-R5
-DEx4 work 3 pwm 0 22 CL8W>5USeBhVTW`UW[ao:1
-l20
+DEx4 work 3 pwm 0 22 T_nS>KoU6RL9glbFLM3g=1
+l21
 L16
-VC8<D=SGzAkd1MPWABcChK3
-!s100 ng]Am:Id1?F;fCBzm2kzn2
-R9
+VzkjSEFfQ6XMk2XQQ1fTG91
+!s100 GeVNH^@>;IOPYhakDj>092
+R8
 31
 !i10b 1
+R9
 R10
 R11
 R12
 R13
-R14

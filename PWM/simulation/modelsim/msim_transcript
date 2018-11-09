@@ -15,8 +15,7 @@
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
 # -- Compiling entity pwm
 # -- Compiling architecture simple_pwm of pwm
 # 
@@ -25,29 +24,38 @@ vsim work.pwm
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
 # Loading work.pwm(simple_pwm)
 do C:/Users/Tic-Tac/Desktop/TSP/PFE/PFE_FPGA/PWM/simulation/modelsim/wave.do
 # .main_pane.wave.interior.cs.body.pw.wf
-# 1
-# 1
+# ** Error: Value length (3) does not equal array index length (8).
+# 
+#Invalid value to -startvalue switch: 000
+# 
+# Value length (3) does not equal array index length (8).
+# 
+#Invalid value to -endvalue switch: 111
+# Error in macro C:\Users\Tic-Tac\Desktop\TSP\PFE\PFE_FPGA\PWM\simulation\modelsim\wave.do line 4
+# Value length (3) does not equal array index length (8).
+# 
+#Invalid value to -startvalue switch: 000
+# 
+# Value length (3) does not equal array index length (8).
+# 
+#Invalid value to -endvalue switch: 111
+# 
+#     while executing
+# "wave create -driver freeze -pattern counter -startvalue 000 -endvalue 111 -type Range -direction Up -period 120us -step 1 -repeat forever -range 2 0 -..."
+wave create -driver freeze -pattern counter -startvalue 00000000 -endvalue 11111111 -type Range -direction Up -period 80us -step 26 -repeat forever -range 7 0 -starttime 0us -endtime 1000us sim:/pwm/duty
 add wave -position insertpoint  \
 sim:/pwm/pwm_out
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 # 
 #           File in use by: Tic-Tac  Hostname: TICOMEN  ProcessID: 2412
 # 
-#           Attempting to use alternate WLF file "./wlftd0wvbe".
+#           Attempting to use alternate WLF file "./wlft81vmvt".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlftd0wvbe
+#           Using alternate file: ./wlft81vmvt
 # 
-add wave -position insertpoint  \
-sim:/pwm/count
-wave modify -driver freeze -pattern counter -startvalue 000 -endvalue 100 -type Range -direction Up -period 400us -step 1 -repeat forever -range 2 0 -starttime 0us -endtime 1000us Edit:/pwm/duty
-wave modify -driver freeze -pattern counter -startvalue 000 -endvalue 100 -type Range -direction Up -period 250us -step 1 -repeat forever -range 2 0 -starttime 0us -endtime 1000us Edit:/pwm/duty
-run -all
-restart -f
-wave modify -driver freeze -pattern counter -startvalue 100 -endvalue 111 -type Range -direction Up -period 200us -step 1 -repeat forever -range 2 0 -starttime 0us -endtime 1000us Edit:/pwm/duty
 run -all
